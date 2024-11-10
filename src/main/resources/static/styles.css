@@ -1,0 +1,114 @@
+/* Dark mode styling for the body and container */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.currently-playing {
+    color: #e0e0e0;
+}
+
+/* Card styling */
+.card {
+    background-color: #1f1f1f;
+    color: #b0b0b0;
+    width: 18rem; /* Fixed width for each card */
+    min-width: 18rem; /* Ensures each card maintains 18rem width */
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.card h2, .card h6 {
+    color: #e0e0e0;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Card image styling */
+.card-img-top {
+    border-radius: 1rem 1rem 0 0;
+    object-fit: cover;
+}
+
+/* Title and text styling within cards */
+.card-title {
+    font-size: 1.25rem;
+    color: #e0e0e0;
+}
+
+.card-text, .card-plays {
+    font-size: 0.9rem;
+    color: #b0b0b0;
+}
+
+/* Button styling */
+.card .btn-primary {
+    background-color: #ba942b;
+    border: none;
+    color: white;
+}
+
+.card .btn-primary:hover {
+    background-color: #d2a846;
+}
+
+/* Playing component and label styling */
+.playing_component {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 100%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.playing_component .title {
+    color: #f0f0f0;
+}
+
+.label .non-hover-label {
+    background-color: #ba942b;
+    color: white;
+    border-radius: 10rem;
+    padding: 0.5rem;
+}
+
+/* Overflow and scrolling for the Top 10 row */
+.top10-row {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 1rem;
+}
+
+.top10-row .col {
+    display: inline-flex; /* Inline-flex to keep cards in a row */
+    gap: 1rem;
+}
+
+.top10-row .col::-webkit-scrollbar {
+    height: 8px;
+}
+
+.top10-row .col::-webkit-scrollbar-thumb {
+    background-color: #444;
+    border-radius: 4px;
+}
+
+.top10-row .col::-webkit-scrollbar-track {
+    background-color: #1f1f1f;
+}
+.detail_col .title:hover{
+    color: #ba942b; /* Example color change (you can use any color you like) */
+    transition: color 0.3s ease;
+}
+.detail_col .card-summary{
+
+}
+
+
+
