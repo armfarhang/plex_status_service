@@ -1,4 +1,4 @@
-package org.cs4471.dogsite;
+package org.cs4471.plexstatusservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

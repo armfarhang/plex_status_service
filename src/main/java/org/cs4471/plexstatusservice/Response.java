@@ -1,4 +1,4 @@
-package org.cs4471.dogsite;
+package org.cs4471.plexstatusservice;
 
 import lombok.Getter;
 import lombok.Setter;

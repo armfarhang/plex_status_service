@@ -1,4 +1,4 @@
-package org.cs4471.dogsite.controller;
+package org.cs4471.plexstatusservice.controller;
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;

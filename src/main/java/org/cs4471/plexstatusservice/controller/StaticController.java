@@ -1,4 +1,4 @@
-package org.cs4471.dogsite.controller;
+package org.cs4471.plexstatusservice.controller;
 
 import org.json.JSONArray;
 import org.json.JSONObject;

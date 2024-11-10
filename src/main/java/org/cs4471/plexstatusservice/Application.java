@@ -1,6 +1,6 @@
-package org.cs4471.dogsite;
+package org.cs4471.plexstatusservice;
 
-import org.cs4471.dogsite.registry.RegistryService;
+import org.cs4471.plexstatusservice.registry.RegistryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.ApplicationArguments;
@@ -11,9 +11,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class Application implements ApplicationRunner {
 	private int sleepTime = 5000;
-
-	@Value("${service.registrar}")
-	private String serviceRegistrar;
 
 	@Value("${service.name}")
 	private String serviceName;
@@ -33,8 +30,7 @@ public class Application implements ApplicationRunner {
 		System.out.println(String.format("%s : Starting service with URL %s. Description: %s", serviceName, serviceURL, serviceDesc));
 
 		// Connect to service controller
-		registryService.Set(serviceRegistrar, serviceName,serviceURL, serviceDesc);
-		System.out.println(String.format("%s : Connecting to %s", serviceName, serviceRegistrar));
+		System.out.println(String.format("%s : Connecting to primary and backup registries...", serviceName));
 
 		// Broadcast to service registry
 		try {
@@ -42,7 +38,7 @@ public class Application implements ApplicationRunner {
 				Response status = registryService.Register();
 
 				if (status.getCode() == 200) {
-					System.out.println(String.format("%s : Registered service!", serviceName));
+					System.out.println(String.format("%s : %s", serviceName, status.getResponse()));
 					break;
 				}
 				else {
