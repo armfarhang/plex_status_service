@@ -1,4 +1,4 @@
-package org.cs4471.plexstatusservice.controller;
+package org.cs4471.service.controller;
 
 import org.json.JSONArray;
 import org.json.JSONObject;

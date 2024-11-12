@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>org.cs4471</groupId>
-	<artifactId>plexstatusservice</artifactId>
+	<artifactId>plexstatus</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>PlexStatusService</name>
+	<name>PlexStatus</name>
 	<description>View the status of a Plex server and top 10 played movies on it</description>
 	<url/>
 	<licenses>

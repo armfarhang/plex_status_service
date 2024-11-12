@@ -1,4 +1,4 @@
-package org.cs4471.plexstatusservice;
+package org.cs4471.service;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

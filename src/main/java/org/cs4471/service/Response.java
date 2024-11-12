@@ -1,4 +1,4 @@
-package org.cs4471.plexstatusservice;
+package org.cs4471.service;
 
 import lombok.Getter;
 import lombok.Setter;
